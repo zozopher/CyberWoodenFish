@@ -1,0 +1,71 @@
+html,body{
+            padding: 0;
+            margin: 0;
+        }
+        button {
+            border: none;
+            margin: 0;
+            padding: 0;
+            width: auto;
+            overflow: visible;
+            background: transparent;
+            color: inherit;
+            font: inherit;
+            line-height: normal;
+            cursor: pointer
+        }
+        #msgContainer{
+            height: 200px;
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            position: absolute;
+            top: -180px;
+            left: 68px;
+        }
+        .msg{
+            opacity: 0;
+            font-size: 20px;
+            transform: translateY(0);
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1); /* 平滑过渡 */
+        }
+        .msg.mid{
+            opacity: 1;
+            transform: translateY(-30px);
+        }
+        .msg.fin{
+            opacity: 0;
+            transform: translateY(-60px);
+        }
+        #woodFish{
+            margin: 0 auto;
+            height: 150px;
+            width: 200px;
+            background-color: bisque;
+            border-radius: 50%;
+            margin-top: 200px;
+            position: relative;
+        }
+        .decoration{
+            height: 35px;
+            width: 35px;
+            background-color: burlywood;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 25px;
+            right: 45px;
+        }
+        .btnContainer{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .knockBtn{
+            padding: 10px 20px;
+            background-color: cadetblue;
+            color: azure;
+            border-radius: 20px;
+        }
+        .knockBtn:active{
+            filter: brightness(80%);
+        }
