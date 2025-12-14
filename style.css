@@ -16,6 +16,7 @@ html,body{
         }
         #msgContainer{
             height: 200px;
+            width: 100px;
             display: flex;
             justify-content: end;
             flex-direction: column;
@@ -24,6 +25,7 @@ html,body{
             left: 68px;
         }
         .msg{
+            position: absolute;
             opacity: 0;
             font-size: 20px;
             transform: translateY(0);

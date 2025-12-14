@@ -15,8 +15,8 @@ btn.addEventListener('click',function () {
         msg.forEach(m => {
             m.classList.remove('mid')
             m.classList.add('fin')})
-    }, 1050);
+    }, 500);
     setTimeout(() => {
         newMsg.remove()
-    }, 2000);
+    }, 1050);
 })
