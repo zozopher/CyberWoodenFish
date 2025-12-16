@@ -34,20 +34,20 @@ html,body{
         }
         .msg.mid{
             opacity: 1;
-            transform: translateY(-50px);
+            transform: translateY(-80px);
              transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .msg.fin{
             opacity: 0;
-            transform: translateY(-100px);
+            transform: translateY(-160px);
              transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .stickBox{
             display: flex;
             align-items: center;
             position: absolute;
-            left: 43%;
-            top: 160px;
+            left: -20px;
+            top: -42px;
             transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .stickBox.animate{
