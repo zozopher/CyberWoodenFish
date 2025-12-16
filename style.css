@@ -25,49 +25,94 @@ html,body{
             left: 68px;
         }
         .msg{
+            color: cadetblue;
             position: absolute;
             opacity: 0;
             font-size: 20px;
             transform: translateY(0);
-            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1); /* 平滑过渡 */
+            transition: none
         }
         .msg.mid{
             opacity: 1;
-            transform: translateY(-30px);
+            transform: translateY(-50px);
+             transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .msg.fin{
             opacity: 0;
-            transform: translateY(-60px);
+            transform: translateY(-100px);
+             transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .stickBox{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 43%;
+            top: 160px;
+            transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .stickBox.animate{
+            transform: translateY(30px);
+        }
+        #stickBody{
+            width: 110px;
+            height: 5px;
+            border-radius: 10px 0 0 10px;
+            background-color: rgb(233, 185, 126);
+        }
+        #stickHead{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgb(233, 185, 126);
         }
         #woodFish{
             margin: 0 auto;
             height: 150px;
             width: 200px;
-            background-color: bisque;
+            background-color: white;
             border-radius: 50%;
             margin-top: 200px;
             position: relative;
         }
         .decoration{
+            visibility: hidden;
             height: 35px;
             width: 35px;
-            background-color: burlywood;
+            background-color: rgb(233, 185, 126);
             border-radius: 50%;
             position: absolute;
             bottom: 25px;
             right: 45px;
         }
+        .woodFishIcon{
+            position: absolute;
+            top: -30px;
+        }
         .btnContainer{
-            margin-top: 50px;
+            margin-top: 30px;
             display: flex;
             justify-content: center;
         }
         .knockBtn{
-            padding: 10px 20px;
+            padding: 8px 20px;
             background-color: cadetblue;
             color: azure;
             border-radius: 20px;
         }
         .knockBtn:active{
             filter: brightness(80%);
+        }
+        .tipContainer{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            color: rgb(127, 105, 78);
+        }
+        .tooFast{
+            opacity: 0;
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .tooFast.show{
+            opacity: 1;
+            transition: none;
         }
