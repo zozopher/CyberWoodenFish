@@ -14,6 +14,13 @@ html,body{
             line-height: normal;
             cursor: pointer
         }
+        ul,li{
+            list-style: none;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+        }
         #msgContainer{
             height: 200px;
             width: 100px;
@@ -66,8 +73,7 @@ html,body{
             background-color: rgb(233, 185, 126);
         }
         #woodFish{
-            margin: 0 auto;
-            height: 150px;
+            height: 250px;
             width: 200px;
             background-color: white;
             border-radius: 50%;
@@ -92,6 +98,9 @@ html,body{
             margin-top: 30px;
             display: flex;
             justify-content: center;
+            position: absolute;
+            bottom: 25px;
+            left: 25%;
         }
         .knockBtn{
             padding: 8px 20px;
@@ -107,6 +116,9 @@ html,body{
             justify-content: center;
             margin-top: 10px;
             color: rgb(127, 105, 78);
+            position: absolute;
+            bottom: 0;
+            left: 25%;
         }
         .tooFast{
             opacity: 0;
@@ -115,4 +127,62 @@ html,body{
         .tooFast.show{
             opacity: 1;
             transition: none;
+        }
+
+
+        .colomnAside{
+            width: 200px;
+            height: 300px;
+            background-color: rgb(227, 231, 226);
+            margin: 150px 0 0 100px;
+            border-radius: 20px;
+        }
+        .colomnHeader{
+            height: 40px;
+            background-color: cadetblue;
+            color: rgb(237, 237, 238);
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            align-items: center;
+        }
+        #myFishTitle{
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        #createNewFish{
+            font-size: 15px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        #createNewFish:hover{
+            color: white;
+        }
+        #myFishList{
+            padding: 0;
+            margin: 0;
+        }
+        .myFish{
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            font-size: 15px;
+            color: rgb(105, 164, 166);
+            cursor: pointer;
+        }
+        .myFish:hover{
+            background-color: rgb(207, 222, 225);
+        }
+        .myFish.chosen{
+            background-color: rgb(207, 222, 225);
+        }
+        .fishColor{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #eed0a8;
+            border: 1.8px solid rgb(255, 255, 255);
+        }
+        .fishName{
+            margin-left: 10px;
         }
