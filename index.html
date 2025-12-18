@@ -34,15 +34,67 @@
             <div class="colomnContent">
                 <ul id="myFishList">
                     <li class="myFish chosen">
-                        <span class="fishColor"></span>
-                        <span class="fishName">经典原皮</span>
+                        <span class="fishNameContainer">
+                            <span class="fishColor" style="background-color: #eed0a8;"></span>
+                            <span class="fishName">经典原皮</span>
+                        </span>
+                        <span><img src="images/icons/垃圾桶.svg" alt="rubbishBin" class="rubbishBin default"></span>
                     </li>
 
                 </ul>
             </div>
+            
         </div>
         
-</div>
+        
+    </div>
+    
+    <div id="newFishModal" class="modal">
+        <div class="modalHeader">
+            <span>新建木鱼</span>
+        </div>
+        
+        <div class="modalContent">
+            <form id="newFishForm">
+                <span>木鱼名：</span>
+                <input type="text" id="newFishName" name="newFishName" placeholder="请输入木鱼名称">
+                <div>木鱼颜色</div>
+                <input type="hidden" id="newFishColor" name="newFishColor">
+                <ul id="colorChoices">
+                    <li class="colorChoice"><span class="newFishColor chosen" data-color="rgb(139, 166, 91)" style="background-color: rgb(139, 166, 91);"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="rgb(195, 192, 106)" style="background-color: rgb(195, 192, 106);"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="rgb(170, 104, 88)" style="background-color: rgb(170, 104, 88);"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="rgb(77, 157, 174)" style="background-color: rgb(77, 157, 174);"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="rgb(91, 142, 187)" style="background-color: rgb(91, 142, 187);"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="rgb(136, 101, 192)" style="background-color: rgb(136, 101, 192);"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="rgb(190, 119, 197)" style="background-color: rgb(190, 119, 197);"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="rgb(210, 132, 162)" style="background-color: rgb(210, 132, 162);"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                    <li class="colorChoice"><span class="newFishColor" data-color="darkolivegreen" style="background-color: darkolivegreen;"></span></li>
+                </ul>
+                <div class="modalBtnContainer">
+                    <button type="submit" class="modalBtn confirmBtn">确认</button>
+                    <button type="button" class="modalBtn cancelBtn">取消</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
 
     <script src="animateTry1.js"></script>

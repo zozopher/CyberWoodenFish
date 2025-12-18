@@ -16,6 +16,13 @@ html,body{
         }
         ul,li{
             list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        input{
+            border: none;
+            outline: none;
+            background: transparent;
         }
         #container{
             display: flex;
@@ -137,10 +144,20 @@ html,body{
             margin: 150px 0 0 100px;
             border-radius: 20px;
         }
+        .colomnContent{
+            height: 240px;
+            overflow-y: auto;
+        }
+        .colomnContent::-webkit-scrollbar {
+            width: 3px;
+        }
+        .colomnContent::-webkit-scrollbar-thumb {
+            background: rgba(105, 164, 166, 0.3);
+        }
         .colomnHeader{
             height: 40px;
             background-color: cadetblue;
-            color: rgb(237, 237, 238);
+            color: rgb(245, 245, 245);
             border-radius: 20px 20px 0 0;
             display: flex;
             align-items: center;
@@ -151,7 +168,8 @@ html,body{
         }
         #createNewFish{
             font-size: 15px;
-            margin-left: 30px;
+            margin-left: 35px;
+            color: rgb(232, 232, 232);
             cursor: pointer;
         }
         #createNewFish:hover{
@@ -162,9 +180,11 @@ html,body{
             margin: 0;
         }
         .myFish{
+            height: 21px;
             display: flex;
             align-items: center;
-            padding: 15px;
+            justify-content: space-between;
+            padding: 10px 15px;
             font-size: 15px;
             color: rgb(105, 164, 166);
             cursor: pointer;
@@ -174,6 +194,7 @@ html,body{
         }
         .myFish.chosen{
             background-color: rgb(207, 222, 225);
+            cursor: default;
         }
         .fishColor{
             display: inline-block;
@@ -183,6 +204,83 @@ html,body{
             background-color: #eed0a8;
             border: 1.8px solid rgb(255, 255, 255);
         }
+        .fishNameContainer{
+            display: flex;
+            align-items: center;
+        }
         .fishName{
             margin-left: 10px;
+        }
+        .rubbishBin{
+            width: 25px;
+            height: 25px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        .rubbishBin:hover{
+            filter: brightness(85%);
+        }
+        .modal{
+            width: 300px;
+            display: none;
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            color: rgb(154, 170, 132);
+            border: 2px solid rgb(154, 170, 132);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .modalHeader{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        #newFishName{
+            width: 140px;
+            height: 25px;
+            padding: 0 5px;
+            margin-left: 5px;
+            background-color: aliceblue;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        #colorChoices{
+            width: 280px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .colorChoice{
+            display: inline-block;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .newFishColor{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+         .newFishColor.chosen{
+            box-shadow: inset 0 0 0 2px  rgb(243, 243, 243);
+            cursor: default;
+        }
+        .modalBtnContainer{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+        .modalBtn{
+            padding: 8px 20px;
+            background-color: rgb(154, 170, 132);
+            color: rgb(252, 255, 240);
+            border-radius: 20px;
+            cursor: pointer;
         }
